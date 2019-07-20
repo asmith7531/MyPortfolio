@@ -1,21 +1,22 @@
 import React from "react";
-import "semantic-ui-css/semantic.min.css";
-import "./App.css";
-import Home from "./Components/Landing/Landing";
-
-import AboutMe from "./Components/AboutMe/AboutMe";
-
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import "./styles/styles.css";
+import "./styles/sass/materialize.scss";
+import Home from "./screens/Home";
+import Projects from "./screens/Projects";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <Home />
-    // <Router>
-    //   <>
-    //     <Home />
-    //     <Route exact path="/" component={Home} />
-    //     <Route exact path="/about" component={AboutMe} />
-    //   </>
-    // </Router>
+    <Router>
+      <>
+        <Nav />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Footer />
+      </>
+    </Router>
   );
 }
 export default App;
