@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import Coders from "../img/coders.jpg";
+import Carousel from "../components/Carousel";
 export default class Home extends Component {
   componentDidMount() {
-    var elem = document.querySelector(".parallax");
-    var instance = M.Parallax.init(elem);
+    M.AutoInit();
   }
   render() {
     return (
       <>
         <div className="section container">
-          <h4 className="center">My name is Austin and I like to code.</h4>
-          <p>
-            The main technologies I use are: HTML, CSS, Javascript, React, and a
-            plethora of libraries, to create websites that look good and
-            function even better.
-          </p>
+          <h5 className="center scrollspy" id="#top">
+            Hello, I make web applications and websites.
+          </h5>
         </div>
         <div>
           <div class="parallax-container">
@@ -24,30 +21,66 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="container section">
+        <div className="section">
+          <Carousel />
+        </div>
+        <div className="container section scrollspy" id="about">
           <ul class="collapsible">
             <li>
               <div class="collapsible-header">
-                <i class="material-icons">filter_drama</i>First
+                <i class="material-icons">about</i>A little about me.
               </div>
               <div class="collapsible-body">
-                <span>Lorem ipsum dolor sit amet.</span>
+                <span>
+                  I was born in Kansas and have always had a passion for
+                  technologies. I first started working with computers when I
+                  went to a "build a pc" summer camp in elementary school. There
+                  I built my first personal computer, stirring my interest in
+                  computers and kickstarting a passion that is continuing today
+                  through web development.
+                </span>
               </div>
             </li>
             <li>
               <div class="collapsible-header">
-                <i class="material-icons">place</i>Second
+                <i class="material-icons">color_lens</i>Why do I like to code?
               </div>
               <div class="collapsible-body">
-                <span>Lorem ipsum dolor sit amet.</span>
+                <span>
+                  I love to code because it allows me to be creative in my own
+                  way. I like creating cool stuff and web development has
+                  allowed my to do that. Also the feeling of finally solving
+                  that tough problem that was giving me hell drives me to grind
+                  it out.
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">code</i>What is your favorite code
+                editor?
+              </div>
+              <div class="collapsible-body">
+                <span>
+                  VS Studio Code for right now, but I want to start moving
+                  towards Vim because it is what the cool kids use.
+                </span>
               </div>
             </li>
             <li>
               <div class="collapsible-header">
-                <i class="material-icons">whatshot</i>Third
+                <i class="material-icons">whatshot</i>What is your favorite
+                videogame?
               </div>
               <div class="collapsible-body">
-                <span>Lorem ipsum dolor sit amet.</span>
+                <ul>
+                  <li>
+                    Singleplayer: "The Last of Us" because the story had my
+                    crying. at the end.
+                  </li>
+                  <li>Multiplayer: "PUBG" bring on the chicken dinner.</li>
+                </ul>
               </div>
             </li>
           </ul>
