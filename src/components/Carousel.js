@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 export default class Carousel extends Component {
-  componentDidMount() {
-    var elem = document.querySelector(".carousel");
-    var instance = M.Carousel.init(elem, { indicators: true });
-  }
+  // componentDidMount() {
+  //   var elem = document.querySelector(".carousel");
+  //   var instance = M.Carousel.init(elem, { indicators: true });
+  // }
   render() {
     return (
       <div className="container">
@@ -29,19 +29,19 @@ export default class Carousel extends Component {
               <li>Materialize</li>
               <p>
                 and a plethora of other libraries, to create websites that look
-                good and function even better.
+                good with fantastic functionality.
               </p>
             </div>
           </div>
           <div />
-          <div
+          {/* <div
             id="carouselSecond"
             class="carousel-item amber white-text"
             href="#two!"
           >
             <h2>Second Panel</h2>
             <p class="white-text">This is your second panel</p>
-          </div>
+          </div> */}
         </div>
       </div>
     );

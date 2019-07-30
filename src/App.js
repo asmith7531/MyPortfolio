@@ -5,16 +5,17 @@ import "./styles/styles.css";
 import "./styles/sass/materialize.scss";
 import Home from "./screens/Home";
 import Projects from "./screens/Projects";
-import Nav from "./components/Nav";
+
 import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
       <>
-        <Nav />
         <Route exact path="/" component={Home} />
         <Route exact path="/projects" component={Projects} />
-        <Footer />
+        <div scrollspy id="contact">
+          <Footer />
+        </div>
       </>
     </Router>
   );

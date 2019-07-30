@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import M from "materialize-css";
 import Coders from "../img/coders.jpg";
 import Carousel from "../components/Carousel";
+import Nav from "../components/HomeNav";
 export default class Home extends Component {
   componentDidMount() {
     M.AutoInit();
@@ -9,10 +10,19 @@ export default class Home extends Component {
   render() {
     return (
       <>
+        <Nav />
         <div className="section container">
-          <h5 className="center scrollspy" id="#top">
-            Hello, I make web applications and websites.
+          <br />
+          <br />
+          <br />
+          <h5 className="center scrollspy" id="top">
+            Hello, I'm Austin. I make web full stack web applications and
+            websites. My passion is making things and I express it through web
+            development. Thanks for taking the time to look through my website.
           </h5>
+          <br />
+          <br />
+          <br />
         </div>
         <div>
           <div class="parallax-container">
@@ -21,9 +31,27 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
         <div className="section">
           <Carousel />
         </div>
+        <br />
+        <br />
+        <br />
+
+        <div>
+          <div class="parallax-container">
+            <div class="parallax">
+              <img src={Coders} alt="coding" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
         <div className="container section scrollspy" id="about">
           <ul class="collapsible">
             <li>
@@ -32,12 +60,11 @@ export default class Home extends Component {
               </div>
               <div class="collapsible-body">
                 <span>
-                  I was born in Kansas and have always had a passion for
-                  technologies. I first started working with computers when I
-                  went to a "build a pc" summer camp in elementary school. There
-                  I built my first personal computer, stirring my interest in
-                  computers and kickstarting a passion that is continuing today
-                  through web development.
+                  I have always had a passion for technology. I first started
+                  working with computers when I went to a "build a pc" summer
+                  camp in elementary school. There I built my first personal
+                  computer, stirring my interest in computers and kickstarting a
+                  passion that is continues today through web development.
                 </span>
               </div>
             </li>
@@ -79,12 +106,26 @@ export default class Home extends Component {
                     Singleplayer: "The Last of Us" because the story had my
                     crying. at the end.
                   </li>
-                  <li>Multiplayer: "PUBG" bring on the chicken dinner.</li>
+                  <li>Multiplayer: "APEX Legends" I am a Pathfinder main.</li>
                 </ul>
               </div>
             </li>
           </ul>
         </div>
+        <br />
+        <br />
+        <br />
+
+        <div>
+          <div class="parallax-container">
+            <div class="parallax">
+              <img src={Coders} alt="coding" />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
       </>
     );
   }
