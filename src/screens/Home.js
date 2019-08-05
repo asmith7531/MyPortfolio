@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import Coders from "../img/coders.jpg";
+import Mtns from "../img/tae-gyun-chung-w_RP66fQt0U-unsplash.jpg";
 import Carousel from "../components/Carousel";
 import Nav from "../components/HomeNav";
 export default class Home extends Component {
@@ -44,7 +45,7 @@ export default class Home extends Component {
         <div>
           <div class="parallax-container">
             <div class="parallax">
-              <img src={Coders} alt="coding" />
+              <img src={Mtns} alt="coding" />
             </div>
           </div>
         </div>
